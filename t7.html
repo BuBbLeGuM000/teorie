@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Grafuri</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="main">
+<!-- start page -->
+<div id="top"></div>	
+<div id="page">
+
+	  <!-- start content -->
+	<div id="content">
+			<h2 class="title">Grafuri euleriene</h2>
+<ol>
+  <li> Ciclu eulerian: ciclu care trece prin toate muchiile unui graf exact o data.</li>
+  <li> Graf eulerian: graf care contine cel putin un ciclu eulerian G33:G34:G35:</li>
+  <li> Teorema : Fie un graf conex fara noduri izolate cu n= 3 noduri.Graful este eulerian daca si numai daca p entru oricare nod al sau, x, d(x) este par.</li>
+</ol><br />
+
+<img src="images/16.jpg" width="400" /><br />
+
+
+Determinarea unui ciclu eulerian
+<ul>
+  <li> Se porneste de la un nod oarecare si se construieste un ciclu.</li>
+  <li> Se parcurg nodurile din ciclul determinat anterior; daca exista un nod care mai are muchii neincluse in ciclul anterior se onstruieste un nou ciclu provenind de le acest nod.</li>
+  <li>  Ciclul construit este inclus in ciclul initial in locul nodului gasit la pasul anterior.</li>
+</ul><br />
+ 
+<pre>
+    pas 1: c1: 1,2,3,1
+    c2: 2,4,7,2
+    pas 2: c1: 1,2,4,7,2,3,1
+    c2: 7,5,10,7
+    pas 3: c1: 1,2,4,7,5,10,7,2,3,1
+    c2: 7,8,11,7
+    pas 4: c1: 1,2,4,7,8,11,7,5,10,7,2,3,1
+    c2: 7,6,9,7
+    pas 5: c1: 1,2,4,7,6,9,7,8,11,7,5,10,7,2,3,1
+</pre>
+
+	</div>
+	<!-- end content -->
+
+<div style="clear: both;">&nbsp;</div>
+
+</div>
+	<div id="bottom"></div>
+<!-- end page -->
+<!-- start footer -->
+<div id="footer"></div>
+</div>
+<!-- end footer -->
+</body>
+</html>

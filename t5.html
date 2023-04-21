@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Grafuri</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="main">
+<!-- start page -->
+<div id="top"></div>	
+<div id="page">
+
+	  <!-- start content -->
+	<div id="content">
+			<h2 class="title">Grafuri conexe</h2>
+
+<p>Un <strong>graf este conex</strong> daca este format dintr-un singur nod sau daca intre oricare doua noduri ale sale exista cel putin un lant.
+</p>
+<p>Aplicand algoritmul de parcurgere in latime a unui graf putem stabili daca un graf este conex sau nu astfel:daca in urma parcurgerii vor fi vizitate toate nodurile grafului atunci graful este conex, in caz contrar nu este conex. 
+</p>
+
+<table><tr><td>
+<img src="images/9.jpg" width="200" /></td><td>
+<img src="images/10.jpg" width="200" /></td></tr></table>
+
+
+<p>Se numeste <strong>componenta conexa</strong> a unui graf G un subgraf conex al grafului si care este maximal in raport cu aceasta proprietate (daca i se adauga un nod isi pierde aceasta proprietate).
+<p>Daca numarul componentelor conexe dintr-un graf este mai mare decat 1, atunci graful nu este conex.Un graf conex are o sigura componenta conexa care cuprinde nodurile sale.
+</p>Un graf fara ciclu se numeste aciclic.
+
+<p><strong>Teorema :</strong>Un graf neorientat conex cu n noduri si n-1 muchii este aciclic maximal cu aceasta proprietate. Daca se adauga o noua muchie graful nu mai este aciclic.
+</p>
+<p>Proprietati:
+</p>
+<ol>
+  <li> Daca un graf cu n noduri are p comp conexe,atunci numarul minim de muchii care trebuie adaugat ca sa devina conex este p-1.</li>
+  <li> Daca un graf conex cu n noduri are n-1 muchii, atunci orice pereche de noduri este legata printr-un lant si numai unul.</li>
+  <li> Daca un graf neorientatat cu n noduri si m muchii este conex, numarul maxim de muchii care se pot elimina pentru a obtine un graf partial conex este: m-n+1.</li>
+  <li> Daca un graf are n noduri,m muchii si p componente conex, numarul de muchii care trebuie eliminate pentru a obtine un graf partial aciclic este egal cu m-n+p.</li>
+</ol><br />
+<strong>Teorema:</strong> Un graf care nu contine noduri izolate este eulerian daca si numai daca este conex si gradul tuturor nodurilor sunt numere pare. 
+
+	</div>
+	<!-- end content -->
+
+<div style="clear: both;">&nbsp;</div>
+
+</div>
+	<div id="bottom"></div>
+<!-- end page -->
+<!-- start footer -->
+<div id="footer"></div>
+</div>
+<!-- end footer -->
+</body>
+</html>
